@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Raleway', sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+}
+
+.controls {
+  width: 20%;
+  padding: 1rem;
+  background: #14161a;
+  color: #fff;
+}
+
+.controls input {
+  border: none;
+}
+
+.map-container {
+  width: 100%;
+  height: 100vh;
+}
+
+.map {
+  width: 80%;
+  height: 100vh;
+}
+
+.highlight {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.combobox-input {
+  width: 100%;
+  padding: 0.5rem;
+}
+.button {
+  position: absolute;
+  bottom: 0%;
+  left: 50%;
+  transform: translate(0%, -100%);
+  background: #00853F;
+  color: #fff;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  text-decoration: none;
+  z-index: 1000;
+  font-weight: bold;
+  font-size: 1.25rem;
+  transition: background 0.3s ease;
+}
+
+.button:hover {
+  background: #006B34;
+}
+
+.modal-content {
+  position: absolute;
+  font-family: 'Bebas Neue', sans-serif;
+  top: 50%;
+  left: 50%;
+  transform: translate(-30%, -100%);
+  border-radius: 0.5rem;
+  z-index: 1000;
+  color: #000;
+  font-size: 15rem;
+  font-weight: bold;
+  user-select: none;
+  opacity: 0.3;
+  backdrop-filter: blur(1px);
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    height: unset;
+  }
+  .controls, .map {
+    width: 100%;
+    padding-bottom: 50px;
+  }
+  .modal-content {
+    position: unset;
+    font-size: 5rem;
+    padding: 0;
+    color: #006B34;
+    opacity: 1;
+    transform: none;
+  }
+  .button {
+    position: unset;
+    transform: none;
+    margin-bottom: 1rem;
+  }
+}

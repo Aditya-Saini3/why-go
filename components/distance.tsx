@@ -43,6 +43,7 @@ export default function Distance({ leg }: DistanceProps) {
       href="https://www.gotransit.com/en/plan-your-trip"
       className="button"
       target="_blank"
+      rel="noopener noreferrer"
     >
       Save and Travel with GO.
     </a>

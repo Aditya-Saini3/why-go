@@ -17,7 +17,7 @@
     "react-google-autocomplete": "^2.6.1",
     "use-places-autocomplete": "^1.11.0",
     "vercel": "^40.1.0",
-    "go": "^1.19"
+    "yarn": "^1.22.17"
   },
   "devDependencies": {
     "@types/node": "^17.0.17",
